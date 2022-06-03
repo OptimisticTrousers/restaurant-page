@@ -59,14 +59,27 @@ footer{
     
     margin-top: auto;
     background-color: #f3ac39;
-    height: 5%;
+    height: 8%;
 }
 
-main > h1{
+.title{
 
     background-color: #773d15;
+    display: flex;
     padding: 2rem 5rem;
     border-radius: 999px;
+    gap: 10px;
+}
+
+.left-leg{
+
+    transform: rotate(180deg);
+}
+
+title > h1{
+
+
+    background-color: #773d15;
 }
 
 main > p{

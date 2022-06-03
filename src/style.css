@@ -47,7 +47,7 @@ ul{
     font-size: 32px;
 }
 
-main{
+div#content{
 
     margin: 0 auto;
     margin-top: 2rem;
@@ -90,7 +90,7 @@ title > h1{
     background-color: #773d15;
 }
 
-main > p{
+div#content > p, .contact-info{
 
     background-color: #773d15;
     padding: 2rem 4.5rem;

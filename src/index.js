@@ -44,18 +44,21 @@ contactUsButton.addEventListener('click', () => {
             position: "Manager",
             phoneNumber: "123-456-7890",
             email: "bobjonesss@gmail.com",
+            img: '../src/optimistictrousers.jpg',
         },
         {
             name: "Christina Phillips",
             position: "Cook",
             phoneNumber: "124-164-4351",
             email: "christinaphillips@gmail.com",
+            img: '../src/optimistictrousers.jpg',
         },
         {
             name: "Loco Poco",
             position: "Cashier",
             phoneNumber: "121-321-4351",
             email: "locopoco@gmail.com",
+            img: '../src/optimistictrousers.jpg',
         },
     ]
 
@@ -77,13 +80,13 @@ contactUsButton.addEventListener('click', () => {
 
         const personInfo = document.createElement('div');
 
-        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 16px;"
+        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 16px; padding: 1rem; border: 3px solid #f7f6f3;"
 
-        personInfo.innerHTML = "Name: Bob Jonessss <br> <br> Position: Manager <br> <br> Phone Number: 123-456-7890 <br> <br> Email: bobjonessss@gmail.com"
+        personInfo.innerHTML = "Name: " + employee.name + "<br> Position: " + employee.position + "<br> Phone Number: " + employee.email;
 
         const img = document.createElement('img');
 
-        img.src = '../src/optimistictrousers.jpg';
+        img.src = employee.img;
 
         img.width = "100";
 

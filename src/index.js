@@ -14,21 +14,24 @@ function removePage(){
 
         if(pageContent.lastElementChild.classList.contains('title')){
 
-            console.log(pageContent.lastElementChild.classList)
             break;
         }
         pageContent.removeChild(pageContent.lastElementChild);
     }
 }
 
-function createMenuPage(){
+function changePageTitle(title){
 
-    const divTitle = document.createElement('div');
+    const pageTitle = document.querySelector('.title > h1');
+
+    console.log(pageTitle)
+
+    pageTitle.innerHTML = "bob";
 
 }
 
 menuButton.addEventListener('click', () => {
 
     removePage();
-
+    changePageTitle("Menu");
 })

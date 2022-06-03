@@ -1,1 +1,1 @@
-console.log("Hello world");
+(()=>{document.querySelector(".home");const e=document.querySelector(".menu"),t=(document.querySelector(".contact-us"),document.querySelector("main"));document.querySelector("div#content"),e.addEventListener("click",(()=>{!function(){for(;t.lastElementChild;){if(t.lastElementChild.classList.contains("title")){console.log(t.lastElementChild.classList);break}t.removeChild(t.lastElementChild)}}()}))})();

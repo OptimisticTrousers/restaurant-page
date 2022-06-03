@@ -103,4 +103,11 @@ footer > a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer > a:hover{
+
+    color: #f0d39b;
 }

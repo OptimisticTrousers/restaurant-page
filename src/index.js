@@ -63,21 +63,23 @@ contactUsButton.addEventListener('click', () => {
 
     const paragraph = document.createElement('p');
 
+    const divContent = document.querySelector('div#content');
+
+    contactInfo.style = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 32px;"
+
+    divContent.style = "row-gap: 10px;";
+
     paragraph.textContent = "Got a question about us or our clothing? Are you interested in partnering with us? Have some suggestions or just want to say Hi? Just contact us. We are here to asset you."
 
-    div.classList.add('contact-info');
+    contactInfo.classList.add('contact-info');
 
-    for(const employee in employees){
+    employees.forEach(function (employee) {
 
         const personInfo = document.createElement('div');
 
-        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px;"
+        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 16px;"
 
-        const contactInfo = document.createElement('p');
-
-        contactInfo.innerHTML = "Name: Bob Jonessss <br> <br> Position: Manager <br> <br> Phone Number: 123-456-7890 <br> <br> Email: bobjonessss@gmail.com"
-
-        personInfo.appendChild(contactInfo);
+        personInfo.innerHTML = "Name: Bob Jonessss <br> <br> Position: Manager <br> <br> Phone Number: 123-456-7890 <br> <br> Email: bobjonessss@gmail.com"
 
         const img = document.createElement('img');
 
@@ -89,7 +91,11 @@ contactUsButton.addEventListener('click', () => {
 
         personInfo.appendChild(img);
 
-        personInfo.appendChild(contactInfo);
-    }
+        contactInfo.appendChild(personInfo);
 
+    })
+
+
+    pageContent.appendChild(paragraph);
+    pageContent.appendChild(contactInfo);
 })

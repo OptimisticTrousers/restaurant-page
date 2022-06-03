@@ -59,37 +59,37 @@ contactUsButton.addEventListener('click', () => {
         },
     ]
 
-    for(const employee in employees){
-
-    }
-
-    const div = document.createElement('div');
-
-    const img = document.createElement('img');
+    const contactInfo = document.createElement('div');
 
     const paragraph = document.createElement('p');
 
-    const contactInfo = document.createElement('p');
-
     paragraph.textContent = "Got a question about us or our clothing? Are you interested in partnering with us? Have some suggestions or just want to say Hi? Just contact us. We are here to asset you."
-
-    div.style = "display: flex; flex-direction: column; align-items: center; gap: 16px;"
-
-    img.src = '../src/optimistictrousers.jpg';
-
-    img.width = "100";
-
-    img.height = "100";
 
     div.classList.add('contact-info');
 
-    contactInfo.innerHTML = "Name: Bob Jonessss <br> <br> Position: Manager <br> <br> Phone Number: 123-456-7890 <br> <br> Email: bobjonessss@gmail.com"
+    for(const employee in employees){
 
-    div.appendChild(paragraph);
+        const personInfo = document.createElement('div');
 
-    div.appendChild(img);
+        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px;"
 
-    div.appendChild(contactInfo);
+        const contactInfo = document.createElement('p');
 
-    pageContent.appendChild(div);
+        contactInfo.innerHTML = "Name: Bob Jonessss <br> <br> Position: Manager <br> <br> Phone Number: 123-456-7890 <br> <br> Email: bobjonessss@gmail.com"
+
+        personInfo.appendChild(contactInfo);
+
+        const img = document.createElement('img');
+
+        img.src = '../src/optimistictrousers.jpg';
+
+        img.width = "100";
+
+        img.height = "100";
+
+        personInfo.appendChild(img);
+
+        personInfo.appendChild(contactInfo);
+    }
+
 })

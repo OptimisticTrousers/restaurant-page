@@ -13,6 +13,7 @@ body{
 div#content{
 
     height: inherit;
+    background: url('chicken.webp');
     background-color: green;
 }
 
@@ -40,8 +41,16 @@ ul{
 
 main{
 
+    margin: 2rem;
     display: flex;
+    row-gap: 8px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blue;
+}
+
+footer{
+    
+    margin-top: auto;
 }

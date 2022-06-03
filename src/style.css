@@ -33,11 +33,18 @@ nav{
     width: 25%;
 }
 
+li:hover{
+
+    color: #f0d39b;
+    cursor: pointer;
+}
+
 ul{
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 32px;
 }
 
 main{

@@ -58,18 +58,28 @@ main{
 footer{
     
     margin-top: auto;
-    background-color: #eaa23c;
+    background-color: #f3ac39;
+    height: 5%;
 }
 
-h1{
+main > h1{
+
     background-color: #773d15;
     padding: 2rem 5rem;
     border-radius: 999px;
 }
 
-p{
+main > p{
 
     background-color: #773d15;
     padding: 2rem 4.5rem;
     border-radius: 10px;
+}
+
+footer > a{
+
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

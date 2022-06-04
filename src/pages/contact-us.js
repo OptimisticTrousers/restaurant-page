@@ -29,33 +29,23 @@ function renderContactPage(){
     const contactInfo = document.createElement('div');
 
     const paragraph = document.createElement('p');
-
     paragraph.textContent = "Got a question about us or our clothing? Are you interested in partnering with us? Have some suggestions or just want to say Hi? Just contact us. We are here to asset you."
-
     contactInfo.classList.add('contact-info');
 
     employees.forEach(function (employee) {
 
         const personInfo = document.createElement('div');
-
         personInfo.classList.add('person-info-style');
-
         personInfo.innerHTML = "Name: " + employee.name + "<br> Position: " + employee.position + "<br> Phone Number: " + employee.email;
 
         const img = document.createElement('img');
-
         img.src = employee.image;
-
         img.width = "100";
-
         img.height = "100";
 
         personInfo.appendChild(img);
-
         contactInfo.appendChild(personInfo);
-
     })
-
 
     pageContent.appendChild(paragraph);
     pageContent.appendChild(contactInfo);

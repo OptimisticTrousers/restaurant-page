@@ -52,16 +52,12 @@ function renderMenuPage(){
 
     menu.forEach(section => {
 
-        const info = document.createElement('div');
-
-        info.classList.add('item-content')
-
         const title = document.createElement('p');
-
         title.textContent = section.title;
-
         title.classList.add('item-title')
 
+        const info = document.createElement('div');
+        info.classList.add('item-content')
         info.appendChild(title);
 
         section.meals.forEach(meal => {

@@ -21,22 +21,18 @@ export function removePage(){
 export function addPageTitle(title){
 
     const pageTitle = document.createElement('div');
-
     pageTitle.classList.add('title');
 
     const leftLeg = document.createElement('img');
-
     leftLeg.src = "../src/assets/chicken-leg.svg";
     leftLeg.width = "50";
     leftLeg.height= "50";
     leftLeg.classList.add('left-leg');
 
     const h1 = document.createElement('h1');
-
     h1.textContent = title;
 
     const rightLeg = document.createElement('img');
-
     rightLeg.src = "../src/assets/chicken-leg.svg";
     rightLeg.width = "50";
     rightLeg.height= "50";

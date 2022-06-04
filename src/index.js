@@ -43,7 +43,19 @@ homeButton.addEventListener('click', () => {
 
     const h1 = document.createElement('h1');
 
+    h1.textContent = "Welcome to Optimistic's Fried Chicken!";
+
     const rightLeg = document.createElement('img');
+
+    rightLeg.classList.add('right-leg');
+
+    rightLeg.src = "../src/chicken-leg.svg";
+    rightLeg.width = "100";
+    rightLeg.height= "100";
+
+    title.appendChild(leftLeg);
+    title.appendChild(h1);
+    title.appendChild(rightLeg);
 
 })
 

@@ -62,3 +62,5 @@ function renderContactPage(){
     pageContent.appendChild(paragraph);
     pageContent.appendChild(contactInfo);
 }
+
+export default renderContactPage;

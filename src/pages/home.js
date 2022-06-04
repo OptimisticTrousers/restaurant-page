@@ -21,3 +21,5 @@ function renderHomePage(){
     pageContent.appendChild(location);
 
 }
+
+export default renderHomePage;

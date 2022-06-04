@@ -1,12 +1,16 @@
-const homeButton = document.querySelector('.home');
+import renderContactPage from "./pages/contact-us";
+import renderHomePage from "./pages/home";
+import renderMenuPage from "./pages/menu";
 
-const menuButton = document.querySelector('.menu');
+export const homeButton = document.querySelector('.home');
 
-const contactUsButton = document.querySelector('.contact-us');
+export const menuButton = document.querySelector('.menu');
 
-const pageContent = document.querySelector('div#content');
+export const contactUsButton = document.querySelector('.contact-us');
 
-function removePage(){
+export const pageContent = document.querySelector('div#content');
+
+export function removePage(){
 
     while(pageContent.lastElementChild){
 
@@ -14,7 +18,7 @@ function removePage(){
     }
 }
 
-function addPageTitle(title){
+export function addPageTitle(title){
 
     const pageTitle = document.createElement('div');
 

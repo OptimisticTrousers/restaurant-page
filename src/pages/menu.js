@@ -72,3 +72,5 @@ function renderMenuPage(){
 
     pageContent.appendChild(menuContent);
 }
+
+export default renderMenuPage

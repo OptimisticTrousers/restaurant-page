@@ -6,6 +6,7 @@ div#content > p, .contact-info{
 }
 
 .person-info-style{
+
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -18,6 +19,7 @@ div#content > p, .contact-info{
 @media(max-width: 630px){
 
     .contact-info{
+
         display: block;
         padding: 0.5rem;
     }

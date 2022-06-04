@@ -38,7 +38,7 @@ function renderContactPage(){
 
         const personInfo = document.createElement('div');
 
-        personInfo.style = "display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 16px; padding: 1rem; border: 3px solid #f7f6f3;"
+        personInfo.classList.add('person-info-style');
 
         personInfo.innerHTML = "Name: " + employee.name + "<br> Position: " + employee.position + "<br> Phone Number: " + employee.email;
 

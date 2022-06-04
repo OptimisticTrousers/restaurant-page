@@ -89,7 +89,7 @@ title > h1{
     background-color: #773d15;
 }
 
-div#content > p, .contact-info{
+div#content > p, .contact-info, .menu-info{
 
     background-color: #773d15;
     padding: 2rem 4.5rem;

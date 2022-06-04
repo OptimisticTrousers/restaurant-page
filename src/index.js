@@ -76,6 +76,27 @@ menuButton.addEventListener('click', () => {
         },
     ]
 
+    const menuContent = document.createElement('div');
+
+    menuContent.classList.add('menu-info')
+
+    menu.forEach(function (meals) {
+
+        const info = document.createElement('div');
+
+        info.style = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 32px;"
+
+        const title = document.createElement('p');
+
+        title.innerHTML = meals.title;
+
+        info.appendChild(title);
+
+        info.innerHTML = `${meals.name} <br> ${meals.price} <br> ${meals.description}`
+
+        menuContent.appendChild(info);
+    })
+
 })
 
 contactUsButton.addEventListener('click', () => {

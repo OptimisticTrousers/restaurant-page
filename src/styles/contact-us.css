@@ -4,3 +4,12 @@ div#content > p, .contact-info{
     padding: 2rem 4.5rem;
     border-radius: 10px;
 }
+
+@media(max-width: 630px){
+
+    .contact-info > div{
+        padding: 0;
+    }
+}
+
+

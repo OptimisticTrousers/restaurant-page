@@ -3,9 +3,7 @@ import renderHomePage from "./pages/home";
 import renderMenuPage from "./pages/menu";
 
 const homeButton = document.querySelector('.home');
-
 const menuButton = document.querySelector('.menu');
-
 const contactUsButton = document.querySelector('.contact-us');
 
 export const pageContent = document.querySelector('div#content');

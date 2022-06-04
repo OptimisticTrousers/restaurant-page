@@ -17,8 +17,9 @@ div#content > p, .contact-info{
 
 @media(max-width: 630px){
 
-    .contact-info > div{
-        padding: 0;
+    .contact-info{
+        display: block;
+        padding: 0.5rem;
     }
 }
 

@@ -31,6 +31,30 @@ menuButton.addEventListener('click', () => {
     removePage();
     changePageTitle("Menu");
 
+    const menu = [
+        {
+            title: "Buckets",
+            meals: [ 
+                {name: "8PC Chicken", price: "$20", description: "8 Pieces of Chicken. No sides included"},
+                {name: "12PC Chicken", price: "$25", description: "12 Pieces of Chicken. No sides included"},
+            ],
+        },
+        {
+            title: "Sides",
+            meals: [ 
+                {name: "Macaroni and Cheese", price: "$3", description: "A delicious, home-made mac and cheese. You'll never want those mediocre Kraft macaroni and cheese again!"},
+                {name: "12PC Chicken", price: "$25", description: "12 Pieces of Chicken. No sides included"},
+            ]
+        },
+        {
+            title: "Drinks",
+            meals: [ 
+                {name: "Macaroni and Cheese", price: "$3", description: "A delicious, home-made mac and cheese. You'll never want those mediocre Kraft macaroni and cheese again!"},
+                {name: "12PC Chicken", price: "$25", description: "12 Pieces of Chicken. No sides included"},
+            ]
+        },
+    ]
+
 })
 
 contactUsButton.addEventListener('click', () => {

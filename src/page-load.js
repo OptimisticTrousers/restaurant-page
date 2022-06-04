@@ -9,4 +9,4 @@ function initialPageLoad(){
     renderHomePage();
 }
 
-export default initialPageLoad;
+initialPageLoad();

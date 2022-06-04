@@ -1,7 +1,6 @@
 import renderContactPage from "./pages/contact-us";
 import renderHomePage from "./pages/home";
 import renderMenuPage from "./pages/menu";
-import initialPageLoad from "./page-load";
 
 const homeButton = document.querySelector('.home');
 
@@ -67,7 +66,5 @@ contactUsButton.addEventListener('click', () => {
 
     removePage();
     addPageTitle("Contact Us");
-    renderHomePage();
+    renderContactPage();
 })
-
-initialPageLoad();

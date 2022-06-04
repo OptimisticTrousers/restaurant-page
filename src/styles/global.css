@@ -75,6 +75,7 @@ h1{
     background-color: #773d15;
 }
 
+/*Got sticky footer from: https://css-tricks.com/a-clever-sticky-footer-technique/*/
 footer{
     
     position:sticky;

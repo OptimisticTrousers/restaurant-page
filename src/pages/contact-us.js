@@ -1,3 +1,5 @@
+import { pageContent } from "..";
+
 function renderContactPage(){
 
     const employees = [

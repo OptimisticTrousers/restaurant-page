@@ -1,3 +1,5 @@
+import { pageContent } from "..";
+
 function renderMenuPage(){
     const menu = [
         {

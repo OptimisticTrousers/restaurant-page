@@ -1,3 +1,5 @@
+import { pageContent } from "..";
+
 function renderHomePage(){
 
     pageContent.classList.add('div#content');

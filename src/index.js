@@ -1,12 +1,13 @@
 import renderContactPage from "./pages/contact-us";
 import renderHomePage from "./pages/home";
 import renderMenuPage from "./pages/menu";
+import initialPageLoad from "./page-load";
 
-export const homeButton = document.querySelector('.home');
+const homeButton = document.querySelector('.home');
 
-export const menuButton = document.querySelector('.menu');
+const menuButton = document.querySelector('.menu');
 
-export const contactUsButton = document.querySelector('.contact-us');
+const contactUsButton = document.querySelector('.contact-us');
 
 export const pageContent = document.querySelector('div#content');
 
@@ -68,3 +69,5 @@ contactUsButton.addEventListener('click', () => {
     addPageTitle("Contact Us");
     renderHomePage();
 })
+
+initialPageLoad();

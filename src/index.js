@@ -26,6 +26,27 @@ function changePageTitle(title){
 
 }
 
+homeButton.addEventListener('click', () => {
+
+    removePage();
+    changePageTitle("Home");
+
+    const title = document.createElement('.title');
+
+    const leftLeg = document.createElement('img');
+
+    leftLeg.classList.add('left-leg');
+
+    leftLeg.src = "../src/chicken-leg.svg";
+    leftLeg.width = "100";
+    leftLeg.height= "100";
+
+    const h1 = document.createElement('h1');
+
+    const rightLeg = document.createElement('img');
+
+})
+
 menuButton.addEventListener('click', () => {
 
     removePage();

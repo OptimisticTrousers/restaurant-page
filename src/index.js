@@ -80,22 +80,31 @@ menuButton.addEventListener('click', () => {
 
     menuContent.classList.add('menu-info')
 
-    menu.forEach(function (meals) {
+    menu.forEach(section => {
 
         const info = document.createElement('div');
 
-        info.style = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 32px;"
+        info.classList.add('item-content')
 
         const title = document.createElement('p');
 
-        title.innerHTML = meals.title;
+        title.textContent = section.title;
+
+        title.classList.add('item-title')
 
         info.appendChild(title);
 
-        info.innerHTML = `${meals.name} <br> ${meals.price} <br> ${meals.description}`
+        console.log(section)
+
+        section.meals.forEach(meal => {
+
+            info.innerHTML += `${meal.name} <br> ${meal.price} <br> ${meal.description} <br>`
+        })
 
         menuContent.appendChild(info);
     })
+
+    pageContent.appendChild(menuContent);
 
 })
 

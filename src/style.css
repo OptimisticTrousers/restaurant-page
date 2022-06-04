@@ -89,11 +89,34 @@ title > h1{
     background-color: #773d15;
 }
 
-div#content > p, .contact-info, .menu-info{
+div#content > p, .contact-info{
 
     background-color: #773d15;
     padding: 2rem 4.5rem;
     border-radius: 10px;
+}
+
+.menu-info{
+
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 150px));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.item-title{
+
+    padding: 0.5rem 1rem;
+    font-size: 32px;
+    text-align: center;
+    color: black;
+}
+
+.item-content{
+
+    border: 3px solid black;
+    padding: 1rem;
 }
 
 footer > a{

@@ -10,20 +10,43 @@ function removePage(){
 
     while(pageContent.lastElementChild){
 
-        if(pageContent.lastElementChild.classList.contains('title')){
-
-            break;
-        }
         pageContent.removeChild(pageContent.lastElementChild);
     }
 }
 
 function changePageTitle(title){
 
-    const pageTitle = document.querySelector('.title > h1');
+    const pageTitle = document.createElement('div');
 
-    pageTitle.textContent = title;
+    pageTitle.classList.add('title');
 
+    const leftLeg = document.createElement('img');
+
+
+    leftLeg.src = "../src/chicken-leg.svg";
+    leftLeg.width = "50";
+    leftLeg.height= "50";
+
+    leftLeg.classList.add('left-leg');
+
+    const h1 = document.createElement('h1');
+
+    h1.textContent = title;
+
+    const rightLeg = document.createElement('img');
+
+
+    rightLeg.src = "../src/chicken-leg.svg";
+    rightLeg.width = "50";
+    rightLeg.height= "50";
+
+    rightLeg.classList.add('right-leg');
+
+    pageTitle.appendChild(leftLeg);
+    pageTitle.appendChild(h1);
+    pageTitle.appendChild(rightLeg);
+
+    pageContent.appendChild(pageTitle);
 }
 
 homeButton.addEventListener('click', () => {
@@ -31,33 +54,6 @@ homeButton.addEventListener('click', () => {
     removePage();
     changePageTitle("Welcome to Optimistic's Fried Chicken!");
 
-    //const title = document.createElement('div');
-
-    //const leftLeg = document.createElement('img');
-
-    //leftLeg.classList.add('left-leg');
-
-    //leftLeg.src = "../src/chicken-leg.svg";
-    //leftLeg.width = "100";
-    //leftLeg.height= "100";
-
-    //const h1 = document.createElement('h1');
-
-    //h1.textContent = "Welcome to Optimistic's Fried Chicken!";
-
-    //const rightLeg = document.createElement('img');
-
-    //rightLeg.classList.add('right-leg');
-
-    //rightLeg.src = "../src/chicken-leg.svg";
-    //rightLeg.width = "100";
-    //rightLeg.height= "100";
-
-    //title.appendChild(leftLeg);
-    //title.appendChild(h1);
-    //title.appendChild(rightLeg);
-
-    //pageContent.appendChild(title);
 
     pageContent.classList.add('div#content');
 

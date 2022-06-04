@@ -77,7 +77,8 @@ h1{
 
 footer{
     
-    margin-top: auto;
+    position:sticky;
+    top:100vh;
     background-color: #f3ac39;
     height: 8%;
 }

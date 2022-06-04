@@ -1,0 +1,6 @@
+div#content > p, .contact-info{
+
+    background-color: #773d15;
+    padding: 2rem 4.5rem;
+    border-radius: 10px;
+}

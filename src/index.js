@@ -22,7 +22,7 @@ function addPageTitle(title){
 
     const leftLeg = document.createElement('img');
 
-    leftLeg.src = "../src/chicken-leg.svg";
+    leftLeg.src = "assets/chicken-leg.svg";
     leftLeg.width = "50";
     leftLeg.height= "50";
     leftLeg.classList.add('left-leg');
@@ -33,7 +33,7 @@ function addPageTitle(title){
 
     const rightLeg = document.createElement('img');
 
-    rightLeg.src = "../src/chicken-leg.svg";
+    rightLeg.src = "assets/chicken-leg.svg";
     rightLeg.width = "50";
     rightLeg.height= "50";
     rightLeg.classList.add('right-leg');

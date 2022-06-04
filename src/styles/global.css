@@ -64,6 +64,11 @@ ul{
     transform: rotate(180deg);
 }
 
+.right-leg, .left-leg{
+
+    margin: 0 1rem;
+}
+
 h1{
 
 

@@ -31,51 +31,54 @@ homeButton.addEventListener('click', () => {
     removePage();
     changePageTitle("Welcome to Optimistic's Fried Chicken!");
 
-    const title = document.createElement('.title');
+    //const title = document.createElement('div');
 
-    const leftLeg = document.createElement('img');
+    //const leftLeg = document.createElement('img');
 
-    leftLeg.classList.add('left-leg');
+    //leftLeg.classList.add('left-leg');
 
-    leftLeg.src = "../src/chicken-leg.svg";
-    leftLeg.width = "100";
-    leftLeg.height= "100";
+    //leftLeg.src = "../src/chicken-leg.svg";
+    //leftLeg.width = "100";
+    //leftLeg.height= "100";
 
-    const h1 = document.createElement('h1');
+    //const h1 = document.createElement('h1');
 
-    h1.textContent = "Welcome to Optimistic's Fried Chicken!";
+    //h1.textContent = "Welcome to Optimistic's Fried Chicken!";
 
-    const rightLeg = document.createElement('img');
+    //const rightLeg = document.createElement('img');
 
-    rightLeg.classList.add('right-leg');
+    //rightLeg.classList.add('right-leg');
 
-    rightLeg.src = "../src/chicken-leg.svg";
-    rightLeg.width = "100";
-    rightLeg.height= "100";
+    //rightLeg.src = "../src/chicken-leg.svg";
+    //rightLeg.width = "100";
+    //rightLeg.height= "100";
 
-    title.appendChild(leftLeg);
-    title.appendChild(h1);
-    title.appendChild(rightLeg);
+    //title.appendChild(leftLeg);
+    //title.appendChild(h1);
+    //title.appendChild(rightLeg);
 
     //pageContent.appendChild(title);
+
+    pageContent.classList.add('div#content');
 
     const description = document.createElement('p');
 
     description.textContent = "Here at Optimistic's Fried Chicken, we are honored to serve you with top quality home-made fried chicken. We offer fried chicken, sides, desserts, and drinks, all made with culinary excellence. Our establishment is renowned for top tier customer service."
 
-    //pageContent.appendChild(description);
+    pageContent.appendChild(description);
 
     const hours = document.createElement('p');
 
     hours.innerHTML = "Sunday: 10am - 6pm <br> Monday: 6am - 10pm <br> Tuesday: 6am - 10pm <br> Wednesday: 6am - 10pm <br> Thursday: 6am - 10pm <br> Friday: 6am - 10pm <br> Saturday: 8am - 8pm <br>";
 
-    //pageContent.appendChild(hours);
+    pageContent.appendChild(hours);
 
     const location = document.createElement('p');
 
     location.innerHTML = "We are located at: <br> 123 Millcreek Drive, Secaucus, New Jersey"
 
-    //pageContent.appendChild(location);
+    pageContent.appendChild(location);
+
 
 })
 
@@ -195,8 +198,6 @@ contactUsButton.addEventListener('click', () => {
     const divContent = document.querySelector('div#content');
 
     contactInfo.style = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 32px;"
-
-    divContent.style = "row-gap: 10px;";
 
     paragraph.textContent = "Got a question about us or our clothing? Are you interested in partnering with us? Have some suggestions or just want to say Hi? Just contact us. We are here to asset you."
 

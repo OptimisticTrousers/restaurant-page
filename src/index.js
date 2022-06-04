@@ -36,7 +36,7 @@ menuButton.addEventListener('click', () => {
             title: "Combos",
             meals: [ 
                 {name: "8PC Meal", price: "$30", description: "8 Pieces of Chicken. Includes 2 sides of your choice"},
-                {name: "Tango For Two", price: "$13", description: "of your choice"},
+                {name: "Tango For Two", price: "$13", description: "Includes 8 tenders and 2 sides of your choice"},
                 {name: "Bingo Boongo", price: "$10", description: "Includes 2 tenders, 2 chicken pieces, and 1 side of your choice"},
                 {name: "12PC Meal", price: "$25", description: "12 Pieces of Chicken. Includes 2 sides of your choice"},
             ],
@@ -94,11 +94,9 @@ menuButton.addEventListener('click', () => {
 
         info.appendChild(title);
 
-        console.log(section)
-
         section.meals.forEach(meal => {
 
-            info.innerHTML += `${meal.name} <br> ${meal.price} <br> ${meal.description} <br>`
+            info.innerHTML += `<p style="font-size: 32px; color: black;">${meal.name}</p> <br><br> ${meal.price} <br><br> <p style="border-bottom: 1px solid black;">${meal.description} <br><br></p>`
         })
 
         menuContent.appendChild(info);

@@ -8,21 +8,21 @@ function renderContactPage(){
             position: "Manager",
             phoneNumber: "123-456-7890",
             email: "bobjonesss@gmail.com",
-            image: '../assets/optimistictrousers.jpg',
+            image: '../src/assets/optimistictrousers.jpg',
         },
         {
             name: "Christina Phillips",
             position: "Cook",
             phoneNumber: "124-164-4351",
             email: "christinaphillips@gmail.com",
-            image: '../assets/cook-girl.jpg',
+            image: '../src/assets/cook-girl.jpg',
         },
         {
             name: "Loco Poco",
             position: "Cashier",
             phoneNumber: "121-321-4351",
             email: "locopoco@gmail.com",
-            image: "../assets/locopoco.png",
+            image: "../src/assets/locopoco.png",
         }
     ]
 
@@ -39,7 +39,7 @@ function renderContactPage(){
         personInfo.innerHTML = "Name: " + employee.name + "<br> Position: " + employee.position + "<br> Phone Number: " + employee.email;
 
         const img = document.createElement('img');
-        img.src = "../assets/locopoco.ng";
+        img.src = employee.image;
         img.width = "100";
         img.height = "100";
 

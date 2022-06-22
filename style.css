@@ -96,6 +96,8 @@ header{
     align-items: center;
     height: 8%;
     background-color: #eaa23c;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 nav{

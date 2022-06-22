@@ -182,7 +182,7 @@ footer > a:hover{
     }
 }
 
-@media(max-width: 630px){
+@media(max-width: 720px){
 
     .contact-info{
 
@@ -190,7 +190,7 @@ footer > a:hover{
         padding: 0.5rem;
     }
     .title{
-        padding: 1rem 2.5rem;
+        padding: 1rem;
     }
     .home, .menu, .contact-us{
         font-size: 24px;

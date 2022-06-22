@@ -8,21 +8,21 @@ function renderContactPage(){
             position: "Manager",
             phoneNumber: "123-456-7890",
             email: "bobjonesss@gmail.com",
-            image: '../src/assets/optimistictrousers.jpg',
+            image: '../assets/optimistictrousers.jpg',
         },
         {
             name: "Christina Phillips",
             position: "Cook",
             phoneNumber: "124-164-4351",
             email: "christinaphillips@gmail.com",
-            image: '../src/assets/cook-girl.jpg',
+            image: '../assets/cook-girl.jpg',
         },
         {
             name: "Loco Poco",
             position: "Cashier",
             phoneNumber: "121-321-4351",
             email: "locopoco@gmail.com",
-            image: "../src/assets/locopoco.png",
+            image: "../assets/locopoco.png",
         }
     ]
 

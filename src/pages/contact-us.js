@@ -39,7 +39,7 @@ function renderContactPage(){
         personInfo.innerHTML = "Name: " + employee.name + "<br> Position: " + employee.position + "<br> Phone Number: " + employee.email;
 
         const img = document.createElement('img');
-        img.src = employee.image;
+        img.src = "../assets/locopoco.ng";
         img.width = "100";
         img.height = "100";
 

@@ -189,4 +189,10 @@ footer > a:hover{
         display: block;
         padding: 0.5rem;
     }
+    .title{
+        padding: 1rem 2.5rem;
+    }
+    .home, .menu, .contact-us{
+        font-size: 24px;
+    }
 }

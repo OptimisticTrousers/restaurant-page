@@ -196,3 +196,12 @@ footer > a:hover{
         font-size: 24px;
     }
 }
+
+@media(max-width: 350px) {
+    .title{
+        padding: 0.75rem;
+    }
+    div#content {
+        width: 62%;
+    }
+}
